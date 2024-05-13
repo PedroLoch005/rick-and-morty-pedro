@@ -1,0 +1,138 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eeeeee;
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+}
+
+
+header > ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header > ul > li {
+  font-size: 1.2rem; 
+  font-weight: 500;
+  transition: color 0.2s ease; 
+}
+
+header > ul > li:hover {
+  color: #007bff; 
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+.chars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.chars .filters {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.chars .filters .filtro {
+  padding: 12px;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer; 
+  transition: background-color 0.2s ease; 
+}
+
+.chars .filters .filtro:hover {
+  background-color: #f0f0f0; 
+}
+
+.chars-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    margin-top: 65px;
+    margin-left: 100px; 
+    margin-right: 100px; 
+  }
+  
+  .filtros {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .texto-meio {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #333;
+  }
+
+
+.char > img {
+  width: 100%;
+  height: auto;
+  max-height: 250px; 
+  object-fit: contain; 
+}
+
+.char-info {
+  font-size: 1.4rem;
+  padding: 10px;
+  color: #333; 
+}
+
+.char-info span {
+  display: block;
+  font-size: 1.3rem; 
+  margin-top: 5px;
+
+}
+
+.foto {
+  background-image: url("C:/Users/Gabri/Downloads/rick-and-morty-pedro/rick.png");
+  background-size: cover;
+  background-position: center;
+  width: 107%;
+  height: 200px; 
+  display: flex;
+}
+
+main button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px; 
+}
